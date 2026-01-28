@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #00f0ff;
+  --primary-glow: rgba(0, 240, 255, 0.5);
+  --secondary: #ff00ff;
+  --secondary-glow: rgba(255, 0, 255, 0.5);
+  --accent: #ffff00;
+  --accent-glow: rgba(255, 255, 0, 0.5);
+  --dark: #000000;
+  --dark-glow: rgba(0, 0, 0, 0.8);
+  --light: #ffffff;
+  --light-glow: rgba(255, 255, 255, 0.8);
+  --grid-color: rgba(0, 240, 255, 0.1);
+  --grid-size: 30px;
+
+  font-family: 'Rajdhani', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--light);
+  background-color: var(--dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--secondary), var(--primary));
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: inherit;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary);
+  text-shadow: 0 0 8px var(--primary-glow);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--dark);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+button {
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.2), transparent);
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 240, 255, 0.1);
+  box-shadow: 0 0 10px var(--primary-glow);
+  border-color: var(--primary);
+  color: var(--light);
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Futuristic background elements */
+.cyber-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  z-index: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  transform: perspective(500px) rotateX(30deg);
+  transform-origin: center bottom;
+}
+
+.cyber-dots {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--grid-color) 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: 0;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.cyber-glow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 240, 255, 0.05) 0%,
+    rgba(255, 0, 255, 0.05) 30%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Cursor trail effect */
+.cursor-trail {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  box-shadow: 0 0 20px var(--primary-glow);
+  mix-blend-mode: screen;
+  transition: all 0.1s ease;
+}
+
+/* Glitch effect */
+.glitch {
+  position: relative;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* Neon text effect */
+.neon-text {
+  color: var(--light);
+  text-shadow:
+    0 0 5px var(--light-glow),
+    0 0 10px var(--primary-glow),
+    0 0 20px var(--primary-glow),
+    0 0 40px var(--primary-glow);
+}
+
+.neon-text-secondary {
+  color: var(--light);
+  text-shadow:
+    0 0 5px var(--light-glow),
+    0 0 10px var(--secondary-glow),
+    0 0 20px var(--secondary-glow),
+    0 0 40px var(--secondary-glow);
+}
+
+/* Futuristic card */
+.cyber-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  box-shadow: 0 0 15px var(--primary-glow);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cyber-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  animation: cyber-scan 3s linear infinite;
+}
+
+@keyframes cyber-scan {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.cyber-card:hover {
+  box-shadow: 0 0 25px var(--primary-glow);
+  transform: translateY(-5px);
+}
+
+/* Futuristic button */
+.cyber-button {
+  font-family: 'JetBrains Mono', monospace;
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.cyber-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.2), transparent);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.cyber-button:hover {
+  color: var(--light);
+  background-color: rgba(0, 240, 255, 0.1);
+  box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.cyber-button:hover::before {
+  left: 100%;
+}
+
+/* Futuristic section */
+.cyber-section {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.cyber-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  z-index: 1;
+}
+
+.cyber-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  z-index: 1;
+}
+
+/* Animated gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

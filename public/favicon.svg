@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="black"/>
+  <path d="M256 64C150.3 64 64 150.3 64 256C64 361.7 150.3 448 256 448C361.7 448 448 361.7 448 256C448 150.3 361.7 64 256 64Z" stroke="#00F0FF" stroke-width="8" stroke-dasharray="20 10"/>
+  <path d="M256 96C167.6 96 96 167.6 96 256C96 344.4 167.6 416 256 416C344.4 416 416 344.4 416 256C416 167.6 344.4 96 256 96Z" stroke="#FF00FF" stroke-width="4" stroke-dasharray="10 5"/>
+  <path d="M256 128C186.1 128 128 186.1 128 256C128 325.9 186.1 384 256 384C325.9 384 384 325.9 384 256C384 186.1 325.9 128 256 128Z" fill="black" stroke="#00F0FF" stroke-width="2"/>
+  <path d="M256 160C203.5 160 160 203.5 160 256C160 308.5 203.5 352 256 352C308.5 352 352 308.5 352 256C352 203.5 308.5 160 256 160Z" fill="black"/>
+  <path d="M256 192C221.5 192 192 221.5 192 256C192 290.5 221.5 320 256 320C290.5 320 320 290.5 320 256C320 221.5 290.5 192 256 192Z" fill="black" stroke="#FF00FF" stroke-width="2"/>
+  <path d="M256 224C239.4 224 224 239.4 224 256C224 272.6 239.4 288 256 288C272.6 288 288 272.6 288 256C288 239.4 272.6 224 256 224Z" fill="#00F0FF"/>
+  <path d="M256 240C248.3 240 240 248.3 240 256C240 263.7 248.3 272 256 272C263.7 272 272 263.7 272 256C272 248.3 263.7 240 256 240Z" fill="#FF00FF"/>
+  <path d="M160 64L192 32" stroke="#00F0FF" stroke-width="4"/>
+  <path d="M352 64L320 32" stroke="#FF00FF" stroke-width="4"/>
+  <path d="M64 160L32 192" stroke="#FF00FF" stroke-width="4"/>
+  <path d="M64 352L32 320" stroke="#00F0FF" stroke-width="4"/>
+  <path d="M160 448L192 480" stroke="#FF00FF" stroke-width="4"/>
+  <path d="M352 448L320 480" stroke="#00F0FF" stroke-width="4"/>
+  <path d="M448 160L480 192" stroke="#00F0FF" stroke-width="4"/>
+  <path d="M448 352L480 320" stroke="#FF00FF" stroke-width="4"/>
+</svg>
