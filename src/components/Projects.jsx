@@ -13,71 +13,12 @@ const projects = [
   {
     title: "QuizPlayLearn",
     description:
-<<<<<<< HEAD
+
       "An AI-driven educational platform designed for interactive learning with robust MERN-based authentication.",
     tech: ["React", "Node.js", "MongoDB", "Express"],
     github: "https://github.com/iamvtyagi/quiz_client",
     live: "https://kawach-git-main-sujal862s-projects.vercel.app/",
   }
-=======
-      "Ride-hailing app using React, Node.js, MongoDB, Google Maps API",
-    tech: ["React", "Node.js", "MongoDB", "Google Maps"],
-    github: "https://github.com/iamvtyagi/Uber.git",
-    live: "https://uber-1-n8he.onrender.com/",
-  },
-  {
-    title: "SEON",
-    description:
-      "A real-time collaborative development environment with integrated AI assistance, live code execution, and team collaboration features.",
-    tech: ["React", "Node.js", "WebSockets", "AI Integration"],
-    github: "https://github.com/iamvtyagi/SEON_.git",
-    live: "https://seon-pi.vercel.app/",
-  },
-  {
-    title: "FlashLearn",
-    description:
-      "FlashLearn is an AI-powered learning platform that transforms PDFs and YouTube videos into interactive quizzes, making exam preparation faster and more engaging.",
-    tech: ["React", "AI", "Firebase", "Tailwind CSS"],
-    github: "https://github.com/iamvtyagi/flashLearn.git",
-    live: "https://github.com/iamvtyagi/flashLearn.git",
-  },
-  {
-    title: "Peer Connect",
-    description:
-      "Real-time video & chat app using WebRTC, Socket.io, Express.js",
-    tech: ["WebRTC", "Socket.io", "Express.js"],
-    github: "https://github.com/iamvtyagi/peer-connect.git",
-    live: "https://omegle-af9h.onrender.com/",
-  },
-  {
-    title: "Weather App",
-    description: "Weather forecasting app using OpenWeather API, React.js",
-    tech: ["React", "OpenWeather API", "Tailwind CSS"],
-    github: "https://github.com/iamvtyagi/weather-apk-project.git",
-    live: "https://iamvtyagi.github.io/weather-apk-project/",
-  },
-  {
-    title: "Sidcup Family Golf",
-    description: "Golf booking website using HTML, CSS, JavaScript, GSAP",
-    tech: ["HTML", "CSS", "JavaScript", "GSAP"],
-    github: "https://github.com/iamvtyagi/Sidcup-Family-Golf.git",
-    live: "https://sidcup-family-golf-pipb.vercel.app/",
-  },
-  {
-    title: "Sundown Studio",
-    description: "Animated website using Locomotive Scroll, GSAP, Swiper.js",
-    tech: ["HTML", "CSS", "JavaScript", "GSAP"],
-    github: "https://github.com/iamvtyagi/Sundown-Studio.git",
-    live: "https://sundown-studio-beta.vercel.app",
-  },
-  {
-    title: "Khatabook",
-    description: "Khatabook app using Node.js, Express.js, Tailwind CSS",
-    tech: ["Node.js", "Express.js", "Tailwind CSS"],
-    github: "https://github.com/iamvtyagi/Khatabook.git",
-    live: "https://khatabook-nast.onrender.com/",
-  },
->>>>>>> 2a2b69a17c75bbf6daffb798f2edb8525391dddd
 ];
 
 const Projects = () => {

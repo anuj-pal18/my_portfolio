@@ -9,7 +9,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
         >
-<<<<<<< HEAD
+
           {/* Terminal Controls */}
           <div className="flex space-x-2 mb-8">
             <div className="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/50"></div>
@@ -33,13 +33,13 @@ const About = () => {
               "Passionate about programming, web development, and participating in hackathons to solve real-world problems through innovative code."
             </p>
           </div>
-=======
+
           <p className="text-lg text-gray-700 leading-relaxed">
             I am a third-year BTech student in Information Technology at JSS Academy of Technical Education, Noida. 
             Passionate about programming, web development, and learning new technologies. I enjoy building innovative 
             solutions and participating in hackathons to solve real-world problems.
           </p>
->>>>>>> 2a2b69a17c75bbf6daffb798f2edb8525391dddd
+
         </motion.div>
       </div>
     </section>
