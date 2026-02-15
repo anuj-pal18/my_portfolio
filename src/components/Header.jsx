@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // Animation library
 import photo from "../assets/photo.jpg";
-import Resume from "../assets/Resume (2).pdf";
+import Resume from "../assets/resume.pdf";
 
 
 import {
