@@ -71,7 +71,7 @@ const Header = () => {
             {/* Action Buttons */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               {[
-                { label: "View Resume", icon: <FaEye />, link: Resume, color: "cyan" },
+                { label: "View Resume", icon: <FaEye />, link: "/Anuj_Pal_Resume.pdf", color: "cyan" },
                 { label: "GitHub", icon: <FaGithub />, link: "https://github.com/anuj-pal18", color: "white" },
                 { label: "LinkedIn", icon: <FaLinkedin />, link: "https://linkedin.com...", color: "pink" }
               ].map((btn, i) => (
