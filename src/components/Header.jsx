@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import photo from "../assets/photo.jpg";
-import Resume from "../assets/Anuj_Pal_Resume.pdf";
+import Resume from "../assets/Resume (2).pdf";
 
 
 import {
@@ -24,7 +24,7 @@ const Header = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
-          
+
           {/* Left Content */}
           <motion.div
             className="flex-1 text-center lg:text-left"
@@ -33,14 +33,14 @@ const Header = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="inline-block mb-6">
-              <motion.div 
+              <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
                 className="overflow-hidden whitespace-nowrap border-r-2 border-cyan-400 pr-2"
               >
-                
+
               </motion.div>
-              
+
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mt-4 tracking-tighter">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-400 to-cyan-600">
                   ANUJ PAL
@@ -49,17 +49,17 @@ const Header = () => {
             </div>
 
             <h2 className="text-xl md:text-2xl font-mono text-gray-300 mb-8 flex items-center justify-center lg:justify-start gap-3">
-              <span className="text-pink-500">_</span> 
-              MERN Stack Developer 
-              <span className="hidden md:inline text-gray-600">|</span> 
+              <span className="text-pink-500">_</span>
+              MERN Stack Developer
+              <span className="hidden md:inline text-gray-600">|</span>
               <span className="text-cyan-400">Open Source</span>
             </h2>
 
             {/* Code Snippet Card */}
             <div className="bg-white/5 border border-white/10 backdrop-blur-md p-6 rounded-xl font-mono text-sm mb-10 max-w-xl mx-auto lg:mx-0 shadow-2xl relative group">
-                <div className="absolute -top-3 left-6 px-3 py-1 bg-black border border-white/10 rounded text-[10px] text-gray-500">
-                    bash --profile
-                </div>
+              <div className="absolute -top-3 left-6 px-3 py-1 bg-black border border-white/10 rounded text-[10px] text-gray-500">
+                bash --profile
+              </div>
               <p className="leading-relaxed">
                 <span className="text-pink-500">const</span> <span className="text-yellow-400">mission</span> = {"{"} <br />
                 &nbsp;&nbsp;focus: <span className="text-cyan-400">"Building Scalable Architectures"</span>,<br />
@@ -71,7 +71,7 @@ const Header = () => {
             {/* Action Buttons */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               {[
-                { label: "View Resume", icon: <FaEye />, link: "/Anuj_Pal_Resume.pdf", color: "cyan" },
+                { label: "View Resume", icon: <FaEye />, link: Resume, color: "cyan" },
                 { label: "GitHub", icon: <FaGithub />, link: "https://github.com/anuj-pal18", color: "white" },
                 { label: "LinkedIn", icon: <FaLinkedin />, link: "https://linkedin.com...", color: "pink" }
               ].map((btn, i) => (
@@ -81,9 +81,9 @@ const Header = () => {
                   whileHover={{ y: -5, scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className={`flex items-center gap-2 px-6 py-3 rounded-lg font-mono text-xs uppercase tracking-widest border transition-all
-                    ${btn.color === 'cyan' ? 'border-cyan-500/50 bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500 hover:text-black' : 
-                      btn.color === 'pink' ? 'border-pink-500/50 bg-pink-500/10 text-pink-400 hover:bg-pink-500 hover:text-black' : 
-                      'border-white/20 bg-white/5 text-white hover:bg-white hover:text-black'}`}
+                    ${btn.color === 'cyan' ? 'border-cyan-500/50 bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500 hover:text-black' :
+                      btn.color === 'pink' ? 'border-pink-500/50 bg-pink-500/10 text-pink-400 hover:bg-pink-500 hover:text-black' :
+                        'border-white/20 bg-white/5 text-white hover:bg-white hover:text-black'}`}
                 >
                   {btn.icon} {btn.label}
                 </motion.a>
@@ -102,7 +102,7 @@ const Header = () => {
               {/* Outer Rotating Circles */}
               <div className="absolute inset-0 border-2 border-dashed border-cyan-500/30 rounded-full animate-[spin_20s_linear_infinite]"></div>
               <div className="absolute -inset-4 border border-pink-500/20 rounded-full animate-[spin_35s_linear_infinite_reverse]"></div>
-              
+
               {/* Image Container */}
               <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-white/10 shadow-[0_0_50px_rgba(6,182,212,0.2)]">
                 <img
@@ -111,21 +111,21 @@ const Header = () => {
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
-                
+
                 {/* Scanning Light Effect */}
                 <div className="absolute inset-0 bg-cyan-400/20 h-1/2 w-full -translate-y-full animate-[scan_4s_linear_infinite] blur-xl"></div>
               </div>
 
               {/* Floating Tech Badges */}
-              <motion.div 
+              <motion.div
                 animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
                 className="absolute -top-4 -right-2 bg-black/80 backdrop-blur-md p-4 rounded-2xl border border-cyan-500/50 shadow-[0_0_20px_rgba(6,182,212,0.3)]"
               >
                 <FaCode className="text-cyan-400 text-2xl" />
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 animate={{ y: [0, 15, 0] }}
                 transition={{ duration: 5, repeat: Infinity, delay: 1 }}
                 className="absolute -bottom-4 -left-2 bg-black/80 backdrop-blur-md p-4 rounded-2xl border border-pink-500/50 shadow-[0_0_20px_rgba(236,72,153,0.3)]"
