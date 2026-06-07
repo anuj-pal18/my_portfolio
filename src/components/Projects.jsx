@@ -26,6 +26,14 @@ const projects = [
     tech: ["React", "Node.js", "MongoDB", "Cloudinary", "Socket.io"],
     github: "https://github.com/anuj-pal18/chatappanuj.git",
     live: "https://chatappanuj.vercel.app/",
+  },
+  {
+    title: "Razorpay Clone",
+    description:
+      "A pixel-perfect Razorpay landing page clone built with Tailwind CSS, featuring a fully responsive design, smooth animations, modern UI components, and an optimized user experience across all devices.",
+    tech: ["HTML", "Tailwind CSS", "JavaScript", "Responsive Design", "Animations"],
+    github: "https://github.com/anuj-pal18/Razorpay-clone.git",
+    live: "https://razorpay-clone-gray.vercel.app/",
   }
 ];
 
