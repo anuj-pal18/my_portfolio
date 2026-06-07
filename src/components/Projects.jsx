@@ -18,6 +18,14 @@ const projects = [
     tech: ["React", "Node.js", "MongoDB", "Express"],
     github: "https://github.com/iamvtyagi/quiz_client",
     live: "https://kawach-git-main-sujal862s-projects.vercel.app/",
+  },
+  {
+    title: "chatApp",
+    description:
+      "A chatApp.",
+    tech: ["React", "Node.js", "MongoDB", "Cloudinary", "Socket.io"],
+    github: "https://github.com/anuj-pal18/chatappanuj.git",
+    live: "https://chatappanuj.vercel.app/",
   }
 ];
 
@@ -26,9 +34,9 @@ const Projects = () => {
     <section id="projects" className="py-24 bg-[#030712] relative overflow-hidden">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
-        <motion.div 
+        <motion.div
           className="flex flex-col items-center mb-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -52,7 +60,7 @@ const Projects = () => {
             >
               {/* Card Inner */}
               <div className="relative bg-[#0b1120] rounded-[calc(1.5rem-1px)] p-8 h-full flex flex-col">
-                
+
                 {/* Header: Icon & Links */}
                 <div className="flex justify-between items-start mb-6">
                   <div className="p-3 bg-cyan-500/10 rounded-2xl text-cyan-400 group-hover:scale-110 transition-transform">
